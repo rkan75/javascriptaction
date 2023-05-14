@@ -5,6 +5,18 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
+  gitRepoURL:  # id of input
+    description: 'Repository URL'
+    required: true
+    default: 'URL'
+  gitRepoBranch:  # id of input
+    description: 'Respository Branch'
+    required: true
+    default: 'Branch'
+  rootInfraYmlFile:  # id of input
+    description: 'Infra Yml File'
+    required: true
+    default: 'YML'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
