@@ -7,11 +7,11 @@ try {
   const nameToGreet = core.getInput('who-to-greet');
   console.log(`Hello ${nameToGreet}!`);
   const repoURL = core.getInput('girRepoURL');
-  console.log(`Hello ${repoURL}!`);
+  console.log(`Repo URL :  ${repoURL}!`);
   const repoBranch = core.getInput('gitRepoBranch');
-  console.log(`Hello ${repoBranch}!`);
+  console.log(`Repo Branch ${repoBranch}!`);
   const infraYML = core.getInput('rootInfraYmlFile');
-  console.log(`Hello ${infraYML}!`);
+  console.log(`Repo InfraFile ${infraYML}!`);
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   // Get the JSON webhook payload for the event that triggered the workflow
